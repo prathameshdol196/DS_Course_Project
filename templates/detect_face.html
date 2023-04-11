@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Video Stream</title>
+</head>
+<body>
+<h1>Live Video Stream</h1>
+<img src="{{ url_for('detect_face_feed') }}">
+<form action="/controls" method="POST" enctype="multipart/form-data">
+    <br>
+    <input type="radio" id="face_alignment" name="options" value="face_alignment">
+    <label for="face_alignment">face_alignment</label>
+    <br>
+
+    <br>
+    <input type="radio" id="detect_face_rectangle" name="options" value="detect_face_rectangle">
+    <label for="detect_face_rectangle">detect_face_rectangle(home)</label>
+    <br>
+
+    <br>
+    <input type="radio" id="find_convex_hull" name="options" value="find_convex_hull">
+    <label for="find_convex_hull">find_convex_hull</label>
+    <br>
+
+    <br>
+    <input type="radio" id="affine_wrap_triangles" name="options" value="affine_wrap_triangles">
+    <label for="affine_wrap_triangles">affine_wrap_triangles</label>
+    <br>
+
+    <br>
+    <input type="radio" id="delaunay_triangulation" name="options" value="delaunay_triangulation">
+    <label for="delaunay_triangulation">delaunay_triangulation</label>
+    <br>
+
+    <br>
+    <input type="radio" id="seamless_cloning" name="options" value="seamless_cloning">
+    <label for="seamless_cloning">seamless_cloning</label>
+    <br>
+
+    <br>
+    <input type="radio" id="optical_flow_and_seamless_cloning" name="options" value="optical_flow_and_seamless_cloning">
+    <label for="optical_flow_and_seamless_cloning">optical_flow_and_seamless_cloning</label>
+    <br>
+
+    <br> <input type="submit" value="submit"> <br>
+</form>
+</body>
+</html>
